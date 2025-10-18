@@ -1,0 +1,105 @@
+body {
+    background: linear-gradient(135deg, #1f2937, #111827);
+    font-family: 'Segoe UI', sans-serif;
+    color: #f9fafb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-container {
+    background: #1e293b;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    width: 400px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #38bdf8;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #334155;
+    color: #f1f5f9;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: 2px solid #38bdf8;
+}
+
+button {
+    width: 100%;
+    background: #38bdf8;
+    color: #0f172a;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0ea5e9;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-link a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.error-text {
+  color: #ff4d4d;
+  font-size: 14px;
+  margin: 3px 0 0 0;
+}
+
+.error-messages {
+  margin-bottom: 10px;
+  background-color: rgba(255, 0, 0, 0.05);
+  border-left: 4px solid #ff4d4d;
+  padding: 6px 10px;
+}
+
+.register-container h2 {
+    color: #2c3e50;
+}
+
+button[type="submit"] {
+    background-color: #2d89ef;
+}
+
+button[type="submit"]:hover {
+    background-color: #1b5fbd;
+}
+

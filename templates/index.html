@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Головна сторінка{% endblock %}
+{% block content %}
+<div class="text-center">
+    {% if user.is_authenticated %}
+        <h2>Вітаємо, {{ user.first_name }} {{ user.last_name }}!</h2>
+        <p>Ви успішно увійшли в систему.</p>
+        <p>Скоро тут буде форма для оформлення ДТП 🚓</p>
+    {% else %}
+        <h2>Вітаємо у системі офіцерів поліції</h2>
+        <p>Будь ласка, <a href="{% url 'auth:login' %}">увійдіть</a> або <a href="{% url 'auth:register' %}">зареєструйтесь</a>.</p>
+    {% endif %}
+</div>
+{% endblock %}
